@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Formulär</title>
 </head>
-<header>
-    <h1>Formulär</h1>
-</header>
+
 <body>
-<main>
-    <form action="tack.html" method="get">
+    <header>
+        <h1>Formulär</h1>
+    </header>
+    <main>
+        <form action="tack.html" method="get">
 
-    <!-- Textruta 1 -->
-    <label for="namn">Förnamn</label><br>
-    <input type="text" id="namn" name="namn"><br><br>
+            <!-- Textruta 1 -->
+            <label for="namn">Förnamn</label><br>
+            <input type="text" id="namn" name="namn"><br><br>
 
-    <!-- Textruta 2 -->
-    <label for="efternamn">Efternamn</label><br>
-    <input type="text" id="efternamn" name="efternamn"><br><br>
+            <!-- Textruta 2 -->
+            <label for="efternamn">Efternamn</label><br>
+            <input type="text" id="efternamn" name="efternamn"><br><br>
 
-    <!-- Textruta 3 -->
-    <label for="epost">E-postadress</label><br>
-    <input type="email" id="epost" name="epost"><br><br>
+            <!-- Textruta 3 -->
+            <label for="epost">E-postadress</label><br>
+            <input type="email" id="epost" name="epost"><br><br>
 
-    <!-- Textruta 4 -->
-    <label for="tel">Telefonnummer</label><br>
-    <input type="text" id="telefonnummer" name="telefonnummer"><br><br>
+            <!-- Textruta 4 -->
+            <label for="tel">Telefonnummer</label><br>
+            <input type="tel" id="tel" name="telefonnummer"><br><br>
 
-    <!-- Dropdown-lista -->
-    <label for="amne">Kurser</label><br>
-    <select id="amne" name="amne">
-      <option value=""disabled selected>Välj kurs</option> <!-- Går ej att välja -->
-      <option value="Engelska">Engelska</option>
-      <option value="Svenska">Svenska</option>
-      <option value="IT-Data">IT-Data</option>
-      <option value="Matte">Matematik</option>
-    </select><br><br>
- 
-    <!-- Textfält, större fritext -->
-    <label for="meddelande">Meddelande</label><br>
-    <textarea id="meddelande" name="meddelande"></textarea><br><br>
- 
-    <!-- Datum -->
-    <label for="datum">Önskat kontaktdatum</label><br>
-    <input type="date" id="datum" name="datum"><br><br>
- 
-    <!-- Filuppladdning -->
-    <label for="bilaga">Bifoga fil</label><br>
-    <input type="file" id="bilaga" name="bilaga"><br><br>
- 
-    <!-- Kryssruta 1 -->
-    <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ja">
-    <label for="nyhetsbrev">Jag vill prenumerera på nyhetsbrevet</label><br><br>
- 
-    <!-- Kryssruta 2 -->
-    <input type="checkbox" id="villkor" name="villkor" required>
-    <label for="villkor">Jag godkänner villkoren</label><br><br>
+            <!-- Dropdown-lista -->
+            <label for="amne">Kurser</label><br>
+            <select id="amne" name="amne">
+                <option value="" disabled selected>Välj kurs</option> <!-- Går ej att välja -->
+                <option value="Engelska">Engelska</option>
+                <option value="Svenska">Svenska</option>
+                <option value="IT-Data">IT-Data</option>
+                <option value="Matte">Matematik</option>
+            </select><br><br>
 
-    <p>Hur kontaktar vi dig?</p> <!-- Kontakt metod -->
+            <!-- Textfält, större fritext -->
+            <label for="meddelande">Meddelande</label><br>
+            <textarea id="meddelande" name="meddelande"></textarea><br><br>
 
-    <!-- Radioknapp 1 -->
-    <input type="radio" id="kontaktEpost" name="kontaktsatt" value="epost" checked>
-    <label for="kontaktEpost">E-post</label><br>
- 
-    <!-- Radioknapp 2 -->
-    <input type="radio" id="kontaktTelefon" name="kontaktsatt" value="telefon">
-    <label for="kontaktTelefon">Telefon</label><br><br>
- 
-    <!-- Skicka-knapp -->
-    <button type="submit">Skicka</button>
-    </form>
+            <!-- Datum -->
+            <label for="datum">Önskat kontaktdatum</label><br>
+            <input type="date" id="datum" name="datum"><br><br>
 
-</main>  
+            <!-- Filuppladdning -->
+            <label for="bilaga">Bifoga fil</label><br>
+            <input type="file" id="bilaga" name="bilaga"><br><br>
+
+            <!-- Kryssruta 1 -->
+            <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ja">
+            <label for="nyhetsbrev">Jag vill prenumerera på nyhetsbrevet</label><br><br>
+
+            <!-- Kryssruta 2 -->
+            <input type="checkbox" id="villkor" name="villkor" value="Ja"> required>
+            <label for="villkor">Jag godkänner villkoren</label><br><br>
+
+            <p>Hur kontaktar vi dig?</p> <!-- Kontakt metod -->
+
+            <!-- Radioknapp 1 -->
+            <input type="radio" id="kontaktEpost" name="kontaktsatt" value="epost" checked>
+            <label for="kontaktEpost">E-post</label><br>
+
+            <!-- Radioknapp 2 -->
+            <input type="radio" id="kontaktTelefon" name="kontaktsatt" value="telefon">
+            <label for="kontaktTelefon">Telefon</label><br><br>
+
+            <!-- Skicka-knapp -->
+            <button type="submit">Skicka</button>
+        </form>
+
+    </main>
 </body>
+
 </html>
